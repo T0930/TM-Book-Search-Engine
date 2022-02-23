@@ -17,8 +17,8 @@ function App() {
       <>
         <Navbar />
         <Switch>
-          <Route path='/searchbooks' element={<SearchBooks />}/>
-          <Route path='/savedbooks' element={<SavedBooks />}/>
+          <Route path='/' component={SearchBooks}/>
+          <Route path='/savedbooks' component={SavedBooks}/>
           <Route render={() => <h1 className='display-2'>Wrong page!</h1>} />
         </Switch>
       </>
